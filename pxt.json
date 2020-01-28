@@ -1,13 +1,15 @@
 {
-    "name": "metro-8-ts",
+    "name": "metro-8",
+    "description": "",
     "dependencies": {
         "device": "*",
         "animation": "*",
         "overworld": "github:riknoll/overworld#v1.1.7"
     },
-    "description": "",
     "files": [
         "main.ts",
+        "sprites.assets.jres",
+        "sprites.assets.ts",
         "README.md",
         "enemy.ts",
         "enemyCrawler.ts",
@@ -16,8 +18,8 @@
         "util.ts",
         "block.ts"
     ],
-    "preferredEditor": "tsprj",
     "testFiles": [
         "test.ts"
-    ]
+    ],
+    "preferredEditor": "tsprj"
 }

@@ -1,0 +1,70 @@
+{
+    "width": 8,
+    "height": 8,
+    "frames": [
+        "wall_0",
+        "brick_block",
+        "breakable_block",
+        "empty",
+
+        "door_upper_west",
+        "door_upper_east",
+        "rail_vertical",
+        "rail_horizontal",
+
+        "door_lower_west",
+        "door_lower_west_pink",
+        "door_lower_west_orange",
+        "door_lower_west_green",
+
+        "door_lower_east",
+        "door_lower_east_pink",
+        "door_lower_east_orange",
+        "door_lower_east_green",
+
+        "wall_1",
+        "wall_2",
+        "steel_block",
+        "stone_block",
+
+        "breakable_block_large_nw",
+        "breakable_block_large_ne",
+        "wall_brick",
+        "wall_crosshatch",
+
+        "breakable_block_large_sw",
+        "breakable_block_large_se",
+        "wall_dirt_0",
+        "wall_dirt_1",
+
+        "ladder",
+        "battery",
+        "heart",
+        "empty_1",
+
+        "green_arrow_west",
+        "green_arrow_south",
+        "green_arrow_east",
+        "green_arrow_north",
+
+        "orange_arrow_west",
+        "orange_arrow_south",
+        "orange_arrow_east",
+        "orange_arrow_north",
+
+        "character_0",
+        "character_1",
+        "character_2",
+        "character_3",
+
+        "number_1",
+        "number_2",
+        "number_3",
+        "number_4",
+
+        "spike_north",
+        "spike_south",
+        "spike_west",
+        "spike_east"
+    ]
+}
