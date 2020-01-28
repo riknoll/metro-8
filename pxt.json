@@ -1,0 +1,23 @@
+{
+    "name": "metro-8-ts",
+    "dependencies": {
+        "device": "*",
+        "animation": "*",
+        "overworld": "github:riknoll/overworld#v1.1.7"
+    },
+    "description": "",
+    "files": [
+        "main.ts",
+        "README.md",
+        "enemy.ts",
+        "enemyCrawler.ts",
+        "enemyLaser.ts",
+        "enemyCannon.ts",
+        "util.ts",
+        "block.ts"
+    ],
+    "preferredEditor": "tsprj",
+    "testFiles": [
+        "test.ts"
+    ]
+}
