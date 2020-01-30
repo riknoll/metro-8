@@ -1,6 +1,8 @@
 {
     "width": 8,
     "height": 8,
+    "tags": "?tile misc",
+    "blockIdentity": "images._tile",
     "frames": [
         "wall_0",
         "brick_block",
