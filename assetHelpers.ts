@@ -31,18 +31,57 @@ namespace assets {
         return left ? assets.door5 : assets.door0;
     }
 
-    export function cannon(direction: WorldDirection) {
+    export function laser(direction: WorldDirection) {
         if (direction === WorldDirection.North) {
-            return 
+            return [
+                assets.laser_vertical9, assets.laser_vertical10, assets.laser_vertical11,
+                assets.laser_vertical12, assets.laser_vertical13, assets.laser_vertical14,
+                assets.laser_vertical15, assets.laser_vertical16, assets.laser_vertical17
+            ];
         }
         else if (direction === WorldDirection.East) {
-
+            return [
+                assets.laser_horizontal0, assets.laser_horizontal1, assets.laser_horizontal2,
+                assets.laser_horizontal3, assets.laser_horizontal4, assets.laser_horizontal5,
+                assets.laser_horizontal6, assets.laser_horizontal7, assets.laser_horizontal8
+            ];
         }
         else if (direction === WorldDirection.South) {
-
+            return [
+                assets.laser_vertical0, assets.laser_vertical1, assets.laser_vertical2,
+                assets.laser_vertical3, assets.laser_vertical4, assets.laser_vertical5,
+                assets.laser_vertical6, assets.laser_vertical7, assets.laser_vertical8
+            ];
         }
         else {
-
+            return [
+                assets.laser_horizontal9, assets.laser_horizontal10, assets.laser_horizontal11,
+                assets.laser_horizontal12, assets.laser_horizontal13, assets.laser_horizontal14,
+                assets.laser_horizontal15, assets.laser_horizontal16, assets.laser_horizontal17
+            ];
         }
     }
+
+    // export function cannon(direction: WorldDirection) {
+    //     if (direction === WorldDirection.North) {
+    //         return [
+
+    //         ];
+    //     }
+    //     else if (direction === WorldDirection.East) {
+    //         return [
+
+    //         ];
+    //     }
+    //     else if (direction === WorldDirection.South) {
+    //         return [
+
+    //         ];
+    //     }
+    //     else {
+    //         return [
+
+    //         ];
+    //     }
+    // }
 } 
