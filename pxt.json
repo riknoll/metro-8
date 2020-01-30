@@ -8,8 +8,8 @@
     },
     "files": [
         "main.ts",
-        "sprites.assets.jres",
-        "sprites.assets.ts",
+        "assets.jres",
+        "assets.ts",
         "README.md",
         "enemy.ts",
         "enemyCrawler.ts",
