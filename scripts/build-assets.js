@@ -12,7 +12,11 @@ child_process.execSync(`pxt buildsprites ${assetdir}`)
 
 function exportFile(filepath) {
     console.log("exporting " + filepath + " to " + withExtension(filepath, ".png"))
-    var data = child_process.execSync(`aseprite -b --sheet ${withExtension(filepath, ".png")} ${filepath}`, { encoding: "utf8" })
+
+    var isVertical = filepath.indexOf("vertical") !== -1;
+    var sheetType = isVertical ? "rows" : "columns"
+
+    var data = child_process.execSync(`aseprite -b --sheet-type ${sheetType} --sheet ${withExtension(filepath, ".png")} ${filepath}`, { encoding: "utf8" })
     var meta = JSON.parse(data);
     var numberFrames = Object.keys(meta.frames).length;
     var spriteWidth = meta.meta.size.w;
@@ -32,8 +36,8 @@ function exportFile(filepath) {
 
     if (name.indexOf("tile") === -1) {
         var pxtMeta = JSON.stringify({
-            width: spriteWidth / numberFrames,
-            height: spriteHeight,
+            width: isVertical ? spriteWidth : spriteWidth / numberFrames,
+            height: isVertical ? spriteHeight / numberFrames : spriteHeight,
             frames
         }, null, 4);
     
