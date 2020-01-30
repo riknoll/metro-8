@@ -16,7 +16,8 @@
         "enemyLaser.ts",
         "enemyCannon.ts",
         "util.ts",
-        "block.ts"
+        "block.ts",
+        "assetHelpers.ts"
     ],
     "testFiles": [
         "test.ts"

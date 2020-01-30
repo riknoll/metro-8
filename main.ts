@@ -289,7 +289,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 1 f f 1 f f f f
                 1 f 1 f f f f f
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 1 f 1 f f f f f
                 1 f f 1 f f f f
@@ -306,7 +306,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 1 f f 1 f f f f
                 1 f 1 f f f f f
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 1 f 1 f f f f f
                 1 f f 1 f f f f
@@ -323,7 +323,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 1 f f 1 f f f f
                 1 f 1 f f f f f
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 1 f 1 f f f f f
                 1 f f 1 f f f f
@@ -340,7 +340,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 1 f f 1 f f f f
                 1 f 1 f f f f f
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 1 f f f f f f f
                 1 f f f f f f f
@@ -381,7 +381,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 f f f f 1 f f 1
                 f f f f f 1 f 1
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 f f f f f 1 f 1
                 f f f f 1 f f 1
@@ -398,7 +398,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 f f f f 1 f f 1
                 f f f f f 1 f 1
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 f f f f f 1 f 1
                 f f f f 1 f f 1
@@ -415,7 +415,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 f f f f 1 f f 1
                 f f f f f 1 f 1
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 f f f f f 1 f 1
                 f f f f 1 f f 1
@@ -432,7 +432,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 f f f f 1 f f 1
                 f f f f f 1 f 1
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 f f f f f f f 1
                 f f f f f f f 1
@@ -476,7 +476,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 1 f f f f f f f
                 1 f f f f f f f
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 1 f 1 f f f f f
                 1 f f 1 f f f f
@@ -493,7 +493,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 1 f f 1 f f f f
                 1 f 1 f f f f f
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 1 f 1 f f f f f
                 1 f f 1 f f f f
@@ -510,7 +510,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 1 f f 1 f f f f
                 1 f 1 f f f f f
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 1 f 1 f f f f f
                 1 f f 1 f f f f
@@ -527,7 +527,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 1 f f 1 f f f f
                 1 f 1 f f f f f
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 1 f 1 f f f f f
                 1 f f 1 f f f f
@@ -568,7 +568,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 f f f f f f f 1
                 f f f f f f f 1
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 f f f f f 1 f 1
                 f f f f 1 f f 1
@@ -585,7 +585,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 f f f f 1 f f 1
                 f f f f f 1 f 1
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 f f f f f 1 f 1
                 f f f f 1 f f 1
@@ -602,7 +602,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 f f f f 1 f f 1
                 f f f f f 1 f 1
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 f f f f f 1 f 1
                 f f f f 1 f f 1
@@ -619,7 +619,7 @@ function openCloseDoor (open: boolean, door: Sprite) {
                 f f f f 1 f f 1
                 f f f f f 1 f 1
                 f f f f f f f f
-          `,img`
+            `,img`
                 f f f f f f f f
                 f f f f f 1 f 1
                 f f f f 1 f f 1
@@ -719,7 +719,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . 3 3 3 3 . .
                     . . 3 . . 3 . .
-          `,img`
+              `,img`
                     . . . . . . . .
                     . 1 1 1 1 1 . .
                     . 1 3 3 3 1 . .
@@ -728,7 +728,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . 3 . . 3 . .
                     . . 3 . . . . .
-          `,img`
+              `,img`
                     . 1 1 . . . . .
                     . 1 1 1 1 1 . .
                     . . 3 3 3 1 . .
@@ -737,7 +737,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . . 3 3 . . .
                     . . . 3 . . . .
-          `,img`
+              `,img`
                     . 1 1 . . . . .
                     . 1 1 1 1 1 . .
                     . . 3 3 3 1 . .
@@ -746,7 +746,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . . 3 3 . . .
                     . . . . 3 . . .
-          `,img`
+              `,img`
                     . . . . . . . .
                     . . 1 1 . . . .
                     . . 1 1 1 1 . .
@@ -771,7 +771,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . 3 3 3 3 . .
                     . . 3 . . 3 . .
-          `,img`
+              `,img`
                     . . . . . . . .
                     . . 1 1 1 1 1 .
                     . . 1 3 3 3 1 .
@@ -780,7 +780,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . 3 . . 3 . .
                     . . . . . 3 . .
-          `,img`
+              `,img`
                     . . . . . 1 1 .
                     . . 1 1 1 1 1 .
                     . . 1 3 3 3 . .
@@ -789,7 +789,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . . 3 3 . . .
                     . . . . 3 . . .
-          `,img`
+              `,img`
                     . . . . . 1 1 .
                     . . 1 1 1 1 1 .
                     . . 1 3 3 3 . .
@@ -798,7 +798,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . . 3 3 . . .
                     . . . 3 . . . .
-          `,img`
+              `,img`
                     . . . . . . . .
                     . . . . 1 1 . .
                     . . 1 1 1 1 . .
@@ -825,7 +825,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . 3 3 3 3 . .
                     . . 3 . . 3 . .
-          `,img`
+              `,img`
                     . . . . . . . .
                     . 1 1 1 1 1 . .
                     . 1 3 3 3 1 . .
@@ -834,7 +834,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . 3 . . 3 . .
                     . . 3 . . 3 . .
-          `,img`
+              `,img`
                     . 1 1 . . . . .
                     . 1 1 1 1 1 . .
                     . . 3 3 3 1 . .
@@ -843,7 +843,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . 3 . . 3 . .
                     . . 3 . . 3 . .
-          `,img`
+              `,img`
                     . 1 1 . . . . .
                     . 1 1 1 1 1 . .
                     . . 3 3 3 1 . .
@@ -852,7 +852,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . 3 . . 3 . .
                     . . 3 . . 3 . .
-          `,img`
+              `,img`
                     . . . . . . . .
                     . . 1 1 . . . .
                     . . 1 1 1 1 . .
@@ -877,7 +877,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . 3 3 3 3 . .
                     . . 3 . . 3 . .
-          `,img`
+              `,img`
                     . . . . . . . .
                     . . 1 1 1 1 1 .
                     . . 1 3 3 3 1 .
@@ -886,7 +886,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . 3 . . 3 . .
                     . . 3 . . 3 . .
-          `,img`
+              `,img`
                     . . . . . 1 1 .
                     . . 1 1 1 1 1 .
                     . . 1 3 3 3 . .
@@ -895,7 +895,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . 3 . . 3 . .
                     . . 3 . . 3 . .
-          `,img`
+              `,img`
                     . . . . . 1 1 .
                     . . 1 1 1 1 1 .
                     . . 1 3 3 3 . .
@@ -904,7 +904,7 @@ function updatePlayerFrames () {
                     . . 3 3 3 3 . .
                     . . 3 . . 3 . .
                     . . 3 . . 3 . .
-          `,img`
+              `,img`
                     . . . . . . . .
                     . . . . 1 1 . .
                     . . 1 1 1 1 . .
@@ -1132,7 +1132,7 @@ function createExplosion (sprite: Sprite) {
                 1 1 1 1 1 1 1 1
                 . 1 1 1 1 1 1 .
                 . . 1 1 1 1 . .
-          `,img`
+            `,img`
                 . . 1 . 1 1 . .
                 . 1 . 1 1 1 1 .
                 1 . 1 1 1 1 1 1
@@ -1141,7 +1141,7 @@ function createExplosion (sprite: Sprite) {
                 1 1 1 1 1 1 1 1
                 . 1 1 1 1 1 1 .
                 . . 1 1 1 1 . .
-          `,img`
+            `,img`
                 . . 1 . 1 . . .
                 . 1 . 1 . 1 1 .
                 1 . 1 . 1 1 1 1
@@ -1150,7 +1150,7 @@ function createExplosion (sprite: Sprite) {
                 . 1 1 1 1 1 1 1
                 . 1 1 1 1 1 1 .
                 . . 1 1 1 1 . .
-          `,img`
+            `,img`
                 . . . . 1 . . .
                 . . . 1 . 1 . .
                 . . 1 . 1 . 1 1
@@ -1159,7 +1159,7 @@ function createExplosion (sprite: Sprite) {
                 . 1 . 1 1 1 1 1
                 . . 1 1 1 1 1 .
                 . . 1 1 1 1 . .
-          `,img`
+            `,img`
                 . . . . . . . .
                 . . . . . 1 . .
                 . . . . 1 . 1 .
@@ -1168,7 +1168,7 @@ function createExplosion (sprite: Sprite) {
                 . 1 . 1 . 1 1 1
                 . . 1 . 1 1 1 .
                 . . . 1 1 1 . .
-          `,img`
+            `,img`
                 . . . . . . . .
                 . . . . . . . .
                 . . . . . . 1 .
@@ -1177,7 +1177,7 @@ function createExplosion (sprite: Sprite) {
                 . . . 1 . 1 . 1
                 . . 1 . 1 . 1 .
                 . . . 1 . 1 . .
-          `,img`
+            `,img`
                 . . . . . . . .
                 . . . . . . . .
                 . . . . . . . .
@@ -1186,7 +1186,7 @@ function createExplosion (sprite: Sprite) {
                 . . . . . 1 . 1
                 . . . . 1 . 1 .
                 . . . 1 . 1 . .
-          `,img`
+            `,img`
                 . . . . . . . .
                 . . . . . . . .
                 . . . . . . . .
@@ -1209,49 +1209,49 @@ function createExplosion (sprite: Sprite) {
                 1 1 1 1 1 1
                 . 1 1 1 1 .
                 . . 1 1 . .
-          `,img`
+            `,img`
                 . . 1 . . .
                 . 1 . 1 1 .
                 1 . 1 1 1 1
                 . 1 1 1 1 1
                 . 1 1 1 1 .
                 . . 1 1 . .
-          `,img`
+            `,img`
                 . . 1 . . .
                 . 1 . 1 . .
                 1 . 1 . 1 1
                 . 1 . 1 1 1
                 . . 1 1 1 .
                 . . 1 1 . .
-          `,img`
+            `,img`
                 . . . . . .
                 . . . 1 . .
                 . . 1 . 1 .
                 . 1 . 1 . 1
                 . . 1 . 1 .
                 . . . 1 . .
-          `,img`
+            `,img`
                 . . . . . .
                 . . . . . .
                 . . . . 1 .
                 . . . 1 . 1
                 . . 1 . 1 .
                 . . . 1 . .
-          `,img`
+            `,img`
                 . . . . . .
                 . . . . . .
                 . . . . . .
                 . . . . . 1
                 . . . . 1 .
                 . . . 1 . .
-          `,img`
+            `,img`
                 . . . . . .
                 . . . . . .
                 . . . . . .
                 . . . . . .
                 . . . . . .
                 . . . . . .
-          `,img`
+            `,img`
                 . . . . . .
                 . . . . . .
                 . . . . . .
@@ -1272,49 +1272,49 @@ function createExplosion (sprite: Sprite) {
                 . . . . . .
                 . . . . . .
                 . . . . . .
-          `,img`
+            `,img`
                 . . . . . .
                 . . . . . .
                 . . . . . .
                 . . . . . .
                 . . . . . .
                 . . . . . .
-          `,img`
+            `,img`
                 . . 1 1 . .
                 . 1 1 1 1 .
                 1 1 1 1 1 1
                 1 1 1 1 1 1
                 . 1 1 1 1 .
                 . . 1 1 . .
-          `,img`
+            `,img`
                 . . 1 . . .
                 . 1 . 1 1 .
                 1 . 1 1 1 1
                 . 1 1 1 1 1
                 . 1 1 1 1 .
                 . . 1 1 . .
-          `,img`
+            `,img`
                 . . 1 . . .
                 . 1 . 1 . .
                 1 . 1 . 1 1
                 . 1 . 1 1 1
                 . . 1 1 1 .
                 . . 1 1 . .
-          `,img`
+            `,img`
                 . . . . . .
                 . . . 1 . .
                 . . 1 . 1 .
                 . 1 . 1 . 1
                 . . 1 . 1 .
                 . . . 1 . .
-          `,img`
+            `,img`
                 . . . . . .
                 . . . . . .
                 . . . . 1 .
                 . . . 1 . 1
                 . . 1 . 1 .
                 . . . 1 . .
-          `,img`
+            `,img`
                 . . . . . .
                 . . . . . .
                 . . . . . .
