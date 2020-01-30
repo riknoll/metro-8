@@ -36,8 +36,8 @@ function exportFile(filepath) {
 
     if (name.indexOf("tile") === -1) {
         var pxtMeta = JSON.stringify({
-            width: isVertical ? spriteWidth : spriteWidth / numberFrames,
-            height: isVertical ? spriteHeight / numberFrames : spriteHeight,
+            width: isVertical ? spriteWidth / numberFrames : spriteWidth ,
+            height: isVertical ? spriteHeight : spriteHeight / numberFrames,
             frames
         }, null, 4);
     
