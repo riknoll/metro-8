@@ -19,7 +19,8 @@
         "block.ts",
         "assetHelpers.ts",
         "constants.ts",
-        "player.ts"
+        "player.ts",
+        "game.ts"
     ],
     "testFiles": [
         "test.ts"

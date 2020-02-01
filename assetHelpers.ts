@@ -88,4 +88,19 @@ namespace assets {
             ];
         }
     }
+
+    export function projectileSmallFrames(direction: WorldDirection) {
+        if (direction === WorldDirection.North || direction === WorldDirection.South) {
+            return [
+                assets.projectile_small_vertical0, assets.projectile_small_vertical1,
+                assets.projectile_small_vertical2, assets.projectile_small_vertical3
+            ];
+        }
+        else {
+            return [
+                assets.projectile_small_horizontal0, assets.projectile_small_horizontal1,
+                assets.projectile_small_horizontal2, assets.projectile_small_horizontal3
+            ];
+        }
+    }
 } 

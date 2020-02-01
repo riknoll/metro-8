@@ -13,7 +13,7 @@ interface EnemyState {
 
 const enemyKinds: number[] = [];
 
-game.onUpdate(function () {
+function updateEnemies() {
     let current: EnemyState;
     for (const kind of enemyKinds) {
         for (const sprite of sprites.allOfKind(kind)) {
@@ -21,4 +21,4 @@ game.onUpdate(function () {
             current.update(sprite, thePlayer);
         }
     }
-})
+}
