@@ -1,10 +1,8 @@
 namespace SpriteKind {
     export const Door = SpriteKind.create()
-    export const Effect = SpriteKind.create()
-    export const TestSprite = SpriteKind.create()
-    export const ReloadSprite = SpriteKind.create()
     export const OpenDoor = SpriteKind.create()
-    export const EntranceDoor = SpriteKind.create()
+    export const Effect = SpriteKind.create()
+    export const RechargeSprite = SpriteKind.create()
 }
 
 enum ZDepth {

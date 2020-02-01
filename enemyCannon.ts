@@ -124,3 +124,33 @@ class CannonEnemyState implements EnemyState {
 
     }
 }
+
+sprites.onCreated(SpriteKind.Cannon, sprite => {
+    const location = tilemap.locationOfSprite(sprite);
+    const tile = tiles.getTileImage(location);
+
+    if (tile.equals(assets.tile_orange_arrow_north)) {
+        sprite.data = new CannonEnemyState(WorldDirection.North, location);   
+    }
+    else if (tile.equals(assets.tile_orange_arrow_east)) {
+        sprite.data = new CannonEnemyState(WorldDirection.East, location);
+    }
+    else if (tile.equals(assets.tile_orange_arrow_south)) {
+        sprite.data = new CannonEnemyState(WorldDirection.South, location);
+    }
+    else if (tile.equals(assets.tile_orange_arrow_west)) {
+        sprite.data = new CannonEnemyState(WorldDirection.West, location);
+    }
+    else if (tile.equals(assets.tile_green_arrow_north)) {
+        sprite.data = new LaserCannonEnemyState(WorldDirection.North, location);
+    }
+    else if (tile.equals(assets.tile_green_arrow_east)) {
+        sprite.data = new LaserCannonEnemyState(WorldDirection.East, location);
+    }
+    else if (tile.equals(assets.tile_green_arrow_south)) {
+        sprite.data = new LaserCannonEnemyState(WorldDirection.South, location);
+    }
+    else if (tile.equals(assets.tile_green_arrow_west)) {
+        sprite.data = new LaserCannonEnemyState(WorldDirection.West, location);
+    }
+});

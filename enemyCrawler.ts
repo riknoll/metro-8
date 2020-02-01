@@ -134,7 +134,9 @@ class CrawlerState implements EnemyState {
 }
 
 sprites.onCreated(SpriteKind.Crawler, function (sprite: Sprite) {
-    sprite.data = new CrawlerState(true);
+    const tile = tiles.getTileImage(tilemap.locationOfSprite(sprite));
+    
+    sprite.data = new CrawlerState(tile.equals(assets.tile_character_0));
 })
 
 scene.onHitWall(SpriteKind.Crawler, function (sprite: Sprite) {

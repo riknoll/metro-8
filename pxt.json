@@ -20,7 +20,8 @@
         "assetHelpers.ts",
         "constants.ts",
         "player.ts",
-        "game.ts"
+        "game.ts",
+        "room.ts"
     ],
     "testFiles": [
         "test.ts"
