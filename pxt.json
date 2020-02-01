@@ -21,7 +21,8 @@
         "constants.ts",
         "player.ts",
         "game.ts",
-        "room.ts"
+        "room.ts",
+        "door.ts"
     ],
     "testFiles": [
         "test.ts"

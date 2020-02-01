@@ -137,6 +137,7 @@ sprites.onCreated(SpriteKind.Crawler, function (sprite: Sprite) {
     const tile = tiles.getTileImage(tilemap.locationOfSprite(sprite));
     
     sprite.data = new CrawlerState(tile.equals(assets.tile_character_0));
+    sprite.z = ZDepth.Enemy;
 })
 
 scene.onHitWall(SpriteKind.Crawler, function (sprite: Sprite) {

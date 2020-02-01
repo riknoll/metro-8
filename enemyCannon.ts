@@ -153,4 +153,6 @@ sprites.onCreated(SpriteKind.Cannon, sprite => {
     else if (tile.equals(assets.tile_green_arrow_west)) {
         sprite.data = new LaserCannonEnemyState(WorldDirection.West, location);
     }
+
+    sprite.z = ZDepth.Enemy;
 });

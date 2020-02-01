@@ -17,3 +17,7 @@ function calculateJumpVelocity(jumpHeight: number) {
 function deltaTime() {
     return game.currentScene().eventContext.deltaTimeMillis;
 }
+
+function locationEquals(a: tiles.Location, b: tiles.Location) {
+    return a.x === b.x && a.y === b.y;
+}
