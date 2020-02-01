@@ -17,7 +17,9 @@
         "enemyCannon.ts",
         "util.ts",
         "block.ts",
-        "assetHelpers.ts"
+        "assetHelpers.ts",
+        "constants.ts",
+        "player.ts"
     ],
     "testFiles": [
         "test.ts"

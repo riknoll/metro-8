@@ -62,26 +62,30 @@ namespace assets {
         }
     }
 
-    // export function cannon(direction: WorldDirection) {
-    //     if (direction === WorldDirection.North) {
-    //         return [
-
-    //         ];
-    //     }
-    //     else if (direction === WorldDirection.East) {
-    //         return [
-
-    //         ];
-    //     }
-    //     else if (direction === WorldDirection.South) {
-    //         return [
-
-    //         ];
-    //     }
-    //     else {
-    //         return [
-
-    //         ];
-    //     }
-    // }
+    export function cannon(direction: WorldDirection) {
+        if (direction === WorldDirection.North) {
+            return [
+                assets.cannon_vertical0, assets.cannon_vertical1,
+                assets.cannon_vertical2, assets.cannon_vertical3
+            ];
+        }
+        else if (direction === WorldDirection.East) {
+            return [
+                assets.cannon_horizontal4, assets.cannon_horizontal5,
+                assets.cannon_horizontal6, assets.cannon_horizontal7
+            ];
+        }
+        else if (direction === WorldDirection.South) {
+            return [
+                assets.cannon_vertical4, assets.cannon_vertical5,
+                assets.cannon_vertical6, assets.cannon_vertical7
+            ];
+        }
+        else {
+            return [
+                assets.cannon_horizontal0, assets.cannon_horizontal1,
+                assets.cannon_horizontal2, assets.cannon_horizontal3
+            ];
+        }
+    }
 } 

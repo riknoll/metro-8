@@ -9,3 +9,11 @@ function calculateOffset(time: number, start: number, period: number, length: nu
 function getFirstWallInDirection(source: tiles.Location, direction: WorldDirection): tiles.Location {
     return tilemap.tileIsWall(source) ? source : getFirstWallInDirection(tilemap.locationInDirection(source, direction), direction) 
 }
+
+function calculateJumpVelocity(jumpHeight: number) {
+    return -Math.sqrt((GRAVITY << 1) * jumpHeight);
+}
+
+function deltaTime() {
+    return game.currentScene().eventContext.deltaTimeMillis;
+}

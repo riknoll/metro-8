@@ -122,7 +122,7 @@ class CrawlerState implements EnemyState {
     setFalling(falling: boolean, sprite: Sprite) {
         if (falling) {
             this.isFalling = true;
-            sprite.ay = gravity;
+            sprite.ay = GRAVITY;
             this.wall = undefined;
         }
         else {
