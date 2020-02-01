@@ -34,7 +34,7 @@ function exportFile(filepath) {
         }
     }
 
-    if (name.indexOf("tile") === -1) {
+    if (name.indexOf("tile") === -1 || name.indexOf("projectile") !== -1) {
         var pxtMeta = JSON.stringify({
             width: isVertical ? spriteWidth / numberFrames : spriteWidth ,
             height: isVertical ? spriteHeight : spriteHeight / numberFrames,
