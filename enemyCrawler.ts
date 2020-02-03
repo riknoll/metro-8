@@ -34,7 +34,7 @@ class CrawlerState implements EnemyState {
                 this.offset++;
                 this.timer += this.tickPeriod
 
-                if (this.offset >= tilemap.tileWidth()) {
+                if (this.offset >= tilemap.tileWidth() + 1) {
                     this.offset = 0;
                     this.getNextTarget();
                 }
@@ -134,6 +134,13 @@ class CrawlerState implements EnemyState {
 }
 
 sprites.onCreated(SpriteKind.Crawler, function (sprite: Sprite) {
+    sprite.setImage(img`
+        7 7 7 7 7
+        7 7 7 7 7
+        7 7 7 7 7
+        7 7 7 7 7
+        7 7 7 7 7
+    `);
     const tile = tiles.getTileImage(tilemap.locationOfSprite(sprite));
     
     sprite.data = new CrawlerState(tile.equals(assets.tile_character_0));

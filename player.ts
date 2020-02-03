@@ -44,12 +44,13 @@ function createNewPlayer() {
     }
 
     thePlayer = sprites.create(assets.player_idle0, SpriteKind.Player);
+    thePlayer.y = screen.height - 16
     thePlayer.z = ZDepth.Player;
+    thePlayer.ay = GRAVITY;
     scene.cameraFollowSprite(thePlayer);
     controller.moveSprite(thePlayer, playerAttributes.playerSpeed, 0);
 
     playerState = new PlayerState();
-    playerState.isFacingLeft = true;
     playerState.isMoving = false;
     playerState.cooldownTimer = 0;
     playerState.rechargeTimer = 0;
@@ -58,6 +59,11 @@ function createNewPlayer() {
 
 function updatePlayerState(player: Sprite, state: PlayerState, attrs: PlayerAttributes) {
     let didUpdate = false;
+
+    if (state.isFacingLeft === undefined) {
+        state.isFacingLeft = true;
+        didUpdate = true;
+    }
 
     if (controller.left.isPressed() && !state.isFacingLeft) {
         state.isFacingLeft = true;
@@ -109,10 +115,30 @@ function updatePlayerState(player: Sprite, state: PlayerState, attrs: PlayerAttr
     }
 }
 
+function doPlayerJump() {
+    if (thePlayer.isHittingTile(CollisionDirection.Bottom)) {
+        thePlayer.vy = playerAttributes.jumpVelocity;
+    }
+}
+
+scene.onOverlapTile(SpriteKind.Player, assets.tile_empty, () => {
+    if (entranceDoor) {
+        entranceDoor = 0;
+        for (const sprite of sprites.allOfKind(SpriteKind.OpenDoor)) {
+            openCloseDoor(sprite, false, true)
+        }
+    }
+})
+
+
 function firePlayerProjectile(player: Sprite, state: PlayerState, attrs: PlayerAttributes) {
     let direction: WorldDirection;
 
-    const projectile = sprites.create(img`1`, SpriteKind.Projectile);
+    const projectile = sprites.create(img`
+        1 1 1
+        1 1 1
+        1 1 1
+    `, SpriteKind.Projectile);
     projectile.z = ZDepth.PlayerProjectile;
     projectile.setPosition(player.x, player.y);
     projectile.setFlag(SpriteFlag.AutoDestroy, true);
@@ -138,3 +164,31 @@ function firePlayerProjectile(player: Sprite, state: PlayerState, attrs: PlayerA
 
     animation.runImageAnimation(projectile, assets.projectileSmallFrames(direction), 100, true);
 }
+
+let collisionLocation: tiles.Location;
+scene.onHitWall(SpriteKind.Projectile, sprite => {
+    collisionLocation = tilemap.locationOfSprite(sprite);
+
+    if (sprite.vx > 0) {
+        collisionLocation = tilemap.locationInDirection(collisionLocation, WorldDirection.East);
+    }
+    else if (sprite.vx < 0) {
+        collisionLocation = tilemap.locationInDirection(collisionLocation, WorldDirection.West);
+    }
+    else if (sprite.vy < 0) {
+        collisionLocation = tilemap.locationInDirection(collisionLocation, WorldDirection.North);
+    }
+    else {
+        collisionLocation = tilemap.locationInDirection(collisionLocation, WorldDirection.South);
+    }
+
+    if (isDoorTile(collisionLocation)) {
+        openCloseDoor(getDoorAtLocation(collisionLocation), true, true)
+    }
+    else {
+        damageBlockAtLocation(collisionLocation, 1, true);
+    }
+
+
+    sprite.destroy();
+})

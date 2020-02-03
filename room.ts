@@ -7,11 +7,12 @@ const destroyOnUnload: number[] = [
     SpriteKind.BreakableBlock
 ];
 
-// This is used in Sprite destroy events to prevent
-// side effects while a map is unloaded
 let inMapUnload = false;
+let entranceDoor = -1;
 
 overworld.onMapLoaded(map => {
+    startGame();
+
     tilemap.createSpritesOnTiles(assets.tile_brick_block, SpriteKind.BrickBlock);
     tilemap.createSpritesOnTiles(assets.tile_breakable_block, SpriteKind.BreakableBlock);
 
@@ -49,6 +50,16 @@ overworld.onMapLoaded(map => {
     
     tilemap.createSpritesOnTiles(assets.tile_character_1, SpriteKind.Crawler);
     tilemap.coverAllTiles(assets.tile_character_1, assets.tile_empty);
+
+    for (const door of sprites.allOfKind(SpriteKind.Door)) {
+        door.y += tilemap.tileWidth() >> 1;
+
+        if (getIdOfDoor(door) === entranceDoor) {
+            openCloseDoor(door, true, true);
+            thePlayer.x = door.x;
+            thePlayer.top = door.bottom - thePlayer.height;
+        }
+    }
 });
 
 overworld.onMapUnloaded(map => {
@@ -64,3 +75,8 @@ overworld.onMapUnloaded(map => {
 
     inMapUnload = false;
 });
+
+
+function loadRoom(id: number) {
+
+}

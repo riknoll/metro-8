@@ -10,6 +10,23 @@ sprites.onCreated(SpriteKind.Door, sprite => {
     openCloseDoor(sprite, false, false);
 });
 
+sprites.onOverlap(SpriteKind.OpenDoor, SpriteKind.Player, (door, player) => {
+        if (doorIsFacingLeft(door)) {
+            if (player.x <= door.x) {
+                return;
+            }
+        }
+        else if (player.x >= door.x) {
+            return;
+        }
+
+        const id = getIdOfDoor(door);
+
+        if (overworld.getConnectedMap(overworld.getLoadedMap(), id)) {
+            overworld.loadConnectedMap(id);
+        }
+});
+
 
 function getDoorInfo(location: tiles.Location) {
     const tile = tiles.getTileImage(location);
@@ -46,7 +63,7 @@ function doorIsFacingLeft(door: Sprite) {
 
 function getDoorLocation(door: Sprite) {
     return tiles.getTileLocation(
-        tilemap.screenCoordinateToTile(door.x),
+        tilemap.screenCoordinateToTile(door.left),
         tilemap.screenCoordinateToTile(door.y - 4)
     );
 }
@@ -63,6 +80,7 @@ function getDoorWithId(id: number) {
 
 function openCloseDoor(door: Sprite, open: boolean, animate: boolean) {
     if (door) {
+        const location = getDoorLocation(door);
         const facingLeft = doorIsFacingLeft(door);
         if (animate) {
             const frames = assets.doorFrames(facingLeft);
@@ -87,13 +105,12 @@ function openCloseDoor(door: Sprite, open: boolean, animate: boolean) {
             door.setKind(SpriteKind.Door);
         }
 
-        const location = getDoorLocation(door);
 
         tiles.setWallAt(location, !open);
         tiles.setWallAt(tilemap.locationInDirection(location, WorldDirection.South), !open);
 
         if (open) {
-            door.setFlag(SpriteFlag.Ghost, false);
+            door.setFlag(SpriteFlag.Ghost, getIdOfDoor(door) === entranceDoor);
             door.setKind(SpriteKind.OpenDoor);
         }
     }
@@ -101,6 +118,19 @@ function openCloseDoor(door: Sprite, open: boolean, animate: boolean) {
 
 function openCloseDoorWithId(id: number, open: boolean, animate: boolean) {
     openCloseDoor(getDoorWithId(id), open, animate)
+}
+
+function isDoorTile(location: tiles.Location) {
+    const tile = tiles.getTileImage(location);
+
+    return tile.equals(assets.tile_door_lower_west_pink) ||
+        tile.equals(assets.tile_door_lower_west_orange) ||
+        tile.equals(assets.tile_door_lower_west_green) ||
+        tile.equals(assets.tile_door_upper_west) ||
+        tile.equals(assets.tile_door_lower_east_pink) ||
+        tile.equals(assets.tile_door_lower_east_orange) ||
+        tile.equals(assets.tile_door_lower_east_green) ||
+        tile.equals(assets.tile_door_upper_east)
 }
 
 function getDoorAtLocation(location: tiles.Location) {
